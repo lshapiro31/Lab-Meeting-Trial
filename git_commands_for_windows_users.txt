@@ -1,0 +1,31 @@
+Start by initializing the repository:
+
+git init Morning_sting.git
+
+cd Morning_sting.git
+
+git pull "url from github"
+
+Now you should have everything from the master file online.
+
+You need to add the repository url as your remote default:
+
+git remote add origin "url from github"
+
+You can check it with:
+
+github remote -v
+
+You may also need to verify your identity:
+
+git config --global user.name "your.username"
+
+To add a file, make sure it's in the github repository folder, then:
+
+git add "filename"
+
+git commit -m "Some message"
+
+git push origin master
+
+Then it should be online!
